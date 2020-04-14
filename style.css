@@ -1,0 +1,659 @@
+/* Parallax background video */
+.et_pb_section_video_bg {
+    position: fixed!important;
+}
+
+@media only screen and (max-width: 980px) {
+	.et_pb_section_video_bg {
+		padding-top: 81px;
+	}
+}
+
+/* 
+ * Site nav settings
+ */
+
+img#logo {
+    max-height: 80%!important;
+}
+
+#top-menu-nav #top-menu li.menu-item a {
+	text-transform: lowercase;
+	font-size: 16px;
+}
+
+#top-menu-nav #top-menu li.menu-item a:after {
+	content: '.';
+}
+
+.et_mobile_menu {
+  right: 0;
+	left: auto!important;
+  width: 69%;
+  border-top: 3px solid #253551;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  text-align: center;
+}
+
+#top-menu .kef_navbar_link_button a, .et_mobile_menu li.kef_navbar_link_button a, ul#top-menu li.kef_navbar_link_button a  {
+	color: #253551!important;
+	background-color: #ffffff!important;
+	border: 3px solid #253551!important;
+	padding: 5px 8px!important;
+	transition: .2s ease-in-out!important;
+}
+
+ul#top-menu li.kef_navbar_link_button a:hover {
+	color: #ffffff!important;
+	background-color: #253551!important;
+	opacity: 1!important;
+}
+
+ul#top-menu li.kef_navbar_link_button a:after {
+	content: ''!important;
+}
+
+@media (min-width: 981px) {
+	.et_header_style_left #et-top-navigation, .et_header_style_split #et-top-navigation {
+    padding: 17px 0 0 0;
+  }
+	
+.et_header_style_left .et-fixed-header #et-top-navigation nav>ul>li>a, .et_header_style_split .et-fixed-header #et-top-navigation nav>ul>li>a {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 980px) {
+  .et_non_fixed_nav.et_transparent_nav #main-header, .et_non_fixed_nav.et_transparent_nav #top-header, .et_fixed_nav #main-header, .et_fixed_nav #top-header {
+    position: fixed;
+  }
+}
+
+.et_mobile_menu li a {
+	border: none;
+	font-size: 16px;
+}
+
+.kef_menu_parent_link a {
+  padding-right: 0px!important;
+}
+
+.kef_menu_parent_link a::after {
+  font-family: unset!important;
+  content: '.'!important;
+  font-size: unset!important;
+  right: auto!important;
+  top: auto!important;
+  font-weight: unset!important;
+  position: unset!important;
+}
+
+ul.sub-menu {
+  padding: 5px 10px!important;
+  border-top: 3px solid #253551!important;
+}
+
+/*
+ * kef list style
+ */
+
+.kef_list_box ul {
+	margin: 10px 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.kef_list_box ul li {
+	list-style: none;
+	margin-left: 25px;
+}
+
+.kef_list_box ul li:before {
+	list-style: none;  
+	content: "\2192";
+	left: 0;
+  position: absolute;
+}
+
+/*
+ * kef fontawesome list
+ */
+
+/* .fa-ul {
+	margin-left: 0.5em;
+} */
+
+.kef_list_wrapper {
+  text-align: left;
+}
+
+.kef_list_wrapper .et_pb_text_inner {
+  display: inline-block;
+}
+
+.kef_fontawesome_list {
+	list-style: none!important;
+	padding-left: 0px!important;
+  text-align: left;
+}
+
+.kef_fontawesome_list li {
+	padding: 10px 0px!important;
+	line-height: 1em!important;
+}
+
+.kef_fontawesome_list li .fa-li {
+	left: -2.3em;
+}
+
+/* 
+ * About Page Changes
+ */
+
+.kef_about_expertise ul li {
+	list-style: none;
+	line-height: 1.4em;
+	text-align: right;
+	font-style: italic;
+	padding: 10px 0px;
+}
+
+.kef_about_significant_achievements ul li {
+	line-height: 1.4em;
+	padding: 7px 0px;
+}
+
+h4 a {
+  color: #2978a0;
+}
+
+.kef_achievements_list li {
+  font-size: 20px!important;
+}
+
+.kef_expertise_list li {
+  font-size: 18px!important;	
+}
+
+/* Tablets */
+@media screen and (max-width: 980px) {
+  .kef_about_experience_heading   {
+	  margin-bottom: -20px!important;
+  }
+	
+	.kef_about_experience_heading .et_pb_text_inner p {
+    text-align: left!important;
+    margin-bottom: 0px;
+	}
+	
+	.kef_about_expertise h2, .kef_about_expertise h3 {
+		text-align: left!important;
+	}
+
+	.kef_about_expertise ul {
+		padding-left: 0px;
+  }
+
+	.kef_about_expertise ul li {
+		line-height: 1em;
+    float: left;
+    display: contents;
+  }
+
+	.kef_about_expertise ul li:after {
+		content: ', ';
+	}
+	
+	.kef_about_expertise ul li:last-child:after {
+		content: '';
+	}
+}
+
+/*
+ * Portfolio page
+ */
+
+.kef_portfolio .project {
+    padding: 20px;
+    box-shadow: 0px 0px 10px #666666;
+    width: 250px!important;
+}
+
+/* 
+ * Footer Changes
+ */
+
+.kef_footer_text {
+	display: inline-block;
+}
+
+.kef_footer_text ul {
+	padding: 0px;
+}
+
+.kef_footer_text ul li {
+	float: left;
+	list-style: none;
+	padding: 0px 20px;
+	border-right: 1px dashed #889080;
+	font-size: 13px;
+  line-height: 13px;
+}
+
+.kef_footer_text ul li:last-child {
+	border-right: none;
+}
+
+.kef_footer_text ul li a {
+	color: #c3c7cf;
+}
+
+.kef_footer_text ul li a i {
+	color: #ffffff;
+	padding: 0px 9px;
+}
+
+/* Tablets */
+@media screen and (max-width: 980px) {
+}
+
+/* Smartphones */
+@media screen and (max-width: 768px) {
+	.kef_footer_text ul {
+		text-align: center;
+	}
+	
+	.kef_footer_text ul li {
+    font-size: 12px;
+    line-height: 25px;
+    float: none;
+    border: none;
+  }
+}
+
+/* Smartphones portrait */
+@media screen and (max-width: 480px) {
+}
+
+/* 
+ * Divi custom row ordering for mobile
+ */
+
+@media all and (max-width: 980px) {
+
+	/*** wrap row in a
+   * flex box
+   ***/
+	
+  .divi_custom_order_row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap; 
+	/* Safari 6.1+ */
+    flex-wrap: wrap;
+  }
+ 
+  /*** custom classes
+   * that will designate
+   * the order of columns
+   * in the flex box row
+   ***/
+	
+  .first_on_mobile {
+    -webkit-order: 1;
+    order: 1;
+  }
+ 
+  .second_on_mobile {
+    -webkit-order: 2;
+    order: 2;
+  }
+  
+	/*** fix margin on last
+	 *  column
+	 ***/
+	
+ .second_on_mobile {
+    margin-bottom: 0px!important;
+  }
+	
+ .first_on_mobile {
+    margin-bottom: 30px!important;
+  }
+}
+
+/*
+ *  Calendly buttons
+ */
+
+.kef_calendly_button {
+	margin: 10px auto!important;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  right: 10px;
+	max-width: 350px!important;
+}
+
+.kef_calendly_button a {
+  background: none;
+  padding: 10px 15px;
+  border: 3px solid #253551;
+  color: #253551;
+	display: block;
+  text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.kef_calendly_button.dark a {
+  border: 3px solid #ffffff!important;
+  color: #ffffff!important;
+}
+
+.kef_calendly_button a:hover {
+    background: #253551;
+    color: #ffffff;
+}
+
+.kef_calendly_button.dark a:hover {
+    background: #ffffff!important;
+    color: #253551!important;
+}
+
+/* Smartphones */
+@media screen and (max-width: 768px) {
+	.kef_calendly_button a {
+    font-size: 18px;
+  }
+}
+
+/* Smartphones portrait */
+@media screen and (max-width: 480px) {
+}
+
+/*
+ * Fix calendly close button and mobile width
+ */
+
+.calendly-overlay .calendly-popup-close {
+    top: 80px!important;
+}
+
+@media (max-width: 980px) {
+  .calendly-overlay .calendly-popup-close {
+    top: 100px!important;
+    right: 20px!important;
+  }
+
+  .calendly-overlay .calendly-popup {
+    top: 130px!important;
+    left: 10px!important;
+		width: 94%!important;
+		height: 80%!important;
+  }
+}
+
+/*
+ * Contact form
+ */
+
+.kef_contact_form button.et_pb_contact_submit.et_pb_button {
+  line-height: 20px!important;
+  padding: 0px!important;
+}
+
+@media screen and (max-width: 480px) {
+  .kef_contact_form button.et_pb_contact_submit.et_pb_button {
+    margin-top: 5px;
+  }
+}
+
+/* 
+ * Divi custom row ordering for mobile
+ */
+
+@media all and (max-width: 980px) {
+
+	/*** wrap row in a
+   * flex box
+   ***/
+	
+  .divi_custom_order_row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap; 
+	/* Safari 6.1+ */
+    flex-wrap: wrap;
+  }
+ 
+  /*** custom classes
+   * that will designate
+   * the order of columns
+   * in the flex box row
+   ***/
+	
+  .first_on_mobile {
+    -webkit-order: 1;
+    order: 1;
+  }
+ 
+  .second_on_mobile {
+    -webkit-order: 2;
+    order: 2;
+  }
+  
+}
+
+/* Divi Toggle customizations */
+
+.et_pb_toggle_open .et_pb_toggle_title:before {
+  font-family: 'Alata',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size: 22px;
+  content: "+";
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.et_pb_toggle_close .et_pb_toggle_title:before {
+  font-family: 'Alata',Helvetica,Arial,Lucida,sans-serif!important;
+  font-size: 22px;
+  content: "+";
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Mobile menu */
+/* https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-mobile-collapsing-nested-menu-with-divis-theme-builder */
+
+.et_mobile_menu .first-level > a {
+  background-color: transparent;
+  position: relative;
+  /* color: #666667; */
+  border-bottom: none;
+	text-transform: lowercase;
+}
+
+.et_mobile_menu .menu-item-has-children>a {
+	font-weight: 600!important;
+}
+
+.et_mobile_menu .first-level > a:after {
+  font-family: "ETmodules";
+  content: "\4c";
+  font-weight: normal;
+  position: absolute;
+  font-size: 16px;
+  top: 13px;
+  right: 10px;
+}
+
+.et_mobile_menu .first-level > .icon-switch:after {
+  content: "\4d";
+}
+
+.et_mobile_menu li a {
+  text-transform: lowercase;
+}
+
+.et_mobile_menu li a:after {
+  content: '.';
+}
+
+.et_mobile_menu li a:hover {
+  background: none;
+}
+
+.et_mobile_menu li li {
+  padding-left: 0px;
+}
+
+.second-level {
+  display: none;
+}
+
+li.second-level.menu-item.reveal-items {
+  display: block;
+  background-color: #ffffff;
+	margin: 5px;
+}
+
+ul.sub-menu {
+	border-top: none!important;
+	padding: 10px!important;
+	position: absolute;
+  background-color: #ffffff;
+}
+
+ul.sub-menu li a {
+  padding: 10px!important;
+}
+
+span.mobile_menu_bar:before{
+  color:#253551;
+}
+
+.et_mobile_menu li ul.sub-menu {
+  padding: 0px!important;
+	width: 100%;
+	box-shadow: 0px 0px 10px #666;
+}
+
+/* Blog */
+
+.et_pb_title_container {
+	margin-bottom: 20px;
+}
+
+h1.entry-title {
+  text-transform: lowercase;
+}
+
+.et_pb_post_content h2 {
+  margin-bottom: 10px;
+	text-transform: lowercase;
+}
+
+.et_pb_post_content ul {
+  margin-left: 10px;
+}
+
+.et_pb_post_content {
+  padding-bottom: 60px;
+}
+
+a.more-link {
+  margin: 13px 0px 0px 0px!important;
+  display: block;
+  font-family: 'Alata',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 1.2em;
+}
+
+a.more-link:after {
+  content: '.';
+}
+
+.kef_blog_post_image figcaption {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Blog Post Comments Form */
+
+h2#comments {
+  text-transform: lowercase;
+}
+
+h2#comments:after {
+  content: '.';
+}
+
+h3#reply-title span {
+  text-transform: lowercase;
+}
+
+h3#reply-title span:after {
+  content: '.';
+}
+
+button#et_pb_submit {
+  text-transform: lowercase;
+}
+
+p.comment-form-email {
+  display: block;
+  float: right;
+  width: 49%;
+}
+
+p.comment-form-author {
+  display: block;
+  float: left;
+  width: 49%;
+}
+
+p.comment-form-url {
+	display: none;
+}
+
+#commentform input[type=email], #commentform input[type=text] {
+  width: 100%;
+}
+
+p.comment-form-cookies-consent {
+  clear: both;
+}
+
+/* Smartphones portrait */
+@media screen and (max-width: 480px) {
+	p.comment-form-email {
+    float: none;
+    width: 100%;
+  }
+
+  p.comment-form-author {
+    float: none;
+		width: 100%;
+  }
+}
