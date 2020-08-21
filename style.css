@@ -6,91 +6,6 @@ img#logo {
   max-height: 80% !important;
 }
 
-#top-menu-nav #top-menu li.menu-item a {
-  text-transform: lowercase;
-  font-size: 16px;
-}
-
-#top-menu-nav #top-menu li.menu-item a:after {
-  content: "";
-}
-
-.et_mobile_menu {
-  right: 0;
-  left: auto !important;
-  width: 69%;
-  border-top: 3px solid #253551;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-#top-menu .kef_navbar_link_button a,
-.et_mobile_menu li.kef_navbar_link_button a,
-ul#top-menu li.kef_navbar_link_button a {
-  color: #253551 !important;
-  background-color: #ffffff !important;
-  border: 3px solid #253551 !important;
-  padding: 5px 8px !important;
-  transition: 0.2s ease-in-out !important;
-}
-
-ul#top-menu li.kef_navbar_link_button a:hover {
-  color: #ffffff !important;
-  background-color: #253551 !important;
-  opacity: 1 !important;
-}
-
-ul#top-menu li.kef_navbar_link_button a:after {
-  content: "" !important;
-}
-
-@media (min-width: 981px) {
-  .et_header_style_left #et-top-navigation,
-  .et_header_style_split #et-top-navigation {
-    padding: 17px 0 0 0;
-  }
-
-  .et_header_style_left .et-fixed-header #et-top-navigation nav > ul > li > a,
-  .et_header_style_split .et-fixed-header #et-top-navigation nav > ul > li > a {
-    padding-bottom: 25px;
-  }
-}
-
-@media (max-width: 980px) {
-  .et_non_fixed_nav.et_transparent_nav #main-header,
-  .et_non_fixed_nav.et_transparent_nav #top-header,
-  .et_fixed_nav #main-header,
-  .et_fixed_nav #top-header {
-    position: fixed;
-  }
-}
-
-.et_mobile_menu li a {
-  border: none;
-  font-size: 16px;
-}
-
-.kef_menu_parent_link a {
-  padding-right: 0px !important;
-}
-
-.kef_menu_parent_link a::after {
-  font-family: unset !important;
-  content: "" !important;
-  font-size: unset !important;
-  right: auto !important;
-  top: auto !important;
-  font-weight: unset !important;
-  position: unset !important;
-}
-
-ul.sub-menu {
-  padding: 5px 10px !important;
-  border-top: 3px solid #253551 !important;
-}
-
 /*
  * kef section styles
  */
@@ -260,20 +175,6 @@ h4 a {
 html,
 body {
   background-color: #253551;
-}
-
-div#main-content {
-  padding-top: 500px;
-  padding-bottom: 120px;
-  background-color: transparent;
-}
-
-/* Tablets */
-@media screen and (max-width: 980px) {
-  div#main-content {
-    padding-top: 360px;
-    padding-bottom: 210px;
-  }
 }
 
 /* Blog post title background image */
@@ -546,6 +447,37 @@ footer {
   }
 }
 
+/* v2 nav */
+
+/* .kef_nav .et_pb_menu__menu {
+	display: none;
+}
+
+.kef_nav .et_mobile_nav_menu {
+	display: block;
+} */
+
+.kef_nav ul.et_mobile_menu {
+  text-align: right;
+  box-shadow: 4px 4px 8px #676767;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  width: unset;
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  left: unset;
+  list-style: none !important;
+}
+
+.kef_nav ul.et_mobile_menu li a {
+  font-size: 20px;
+  text-transform: lowercase;
+  line-height: 18px;
+  border: none;
+  white-space: nowrap;
+}
+
 /* Divi Toggle customizations */
 
 .et_pb_toggle_open .et_pb_toggle_title:before {
@@ -573,82 +505,6 @@ footer {
   -o-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-/* Mobile menu */
-/* https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-mobile-collapsing-nested-menu-with-divis-theme-builder */
-
-.et_mobile_menu .first-level > a {
-  background-color: transparent;
-  position: relative;
-  /* color: #666667; */
-  border-bottom: none;
-  text-transform: lowercase;
-}
-
-.et_mobile_menu .menu-item-has-children > a {
-  font-weight: 600 !important;
-}
-
-.et_mobile_menu .first-level > a:after {
-  font-family: "ETmodules";
-  content: "\4c";
-  font-weight: normal;
-  position: absolute;
-  font-size: 16px;
-  top: 13px;
-  right: 10px;
-}
-
-.et_mobile_menu .first-level > .icon-switch:after {
-  content: "\4d";
-}
-
-.et_mobile_menu li a {
-  text-transform: lowercase;
-}
-
-.et_mobile_menu li a:after {
-  content: "";
-}
-
-.et_mobile_menu li a:hover {
-  background: none;
-}
-
-.et_mobile_menu li li {
-  padding-left: 0px;
-}
-
-.second-level {
-  display: none;
-}
-
-li.second-level.menu-item.reveal-items {
-  display: block;
-  background-color: #ffffff;
-  margin: 5px;
-}
-
-ul.sub-menu {
-  border-top: none !important;
-  padding: 10px !important;
-  position: absolute;
-  background-color: #ffffff;
-}
-
-ul.sub-menu li a {
-  padding: 10px !important;
-}
-
-span.mobile_menu_bar:before {
-  color: #253551;
-}
-
-.et_mobile_menu li ul.sub-menu {
-  padding: 0px !important;
-  width: 100%;
-  box-shadow: 0px 0px 10px #666;
 }
 
 /* Blog */
